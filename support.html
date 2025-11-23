@@ -32,66 +32,203 @@
     <main>
         <section class="support-hero">
             <div class="support-content">
-                <h1 class="support-title">Support</h1>
-                <p class="support-subtitle">Wir helfen dir gerne weiter! Finde Antworten auf häufige Fragen oder kontaktiere uns direkt.</p>
+                <h1 class="support-title">Support Center</h1>
+                <p class="support-subtitle">Wir sind für dich da! Finde schnelle Antworten oder kontaktiere unser Team direkt.</p>
             </div>
         </section>
 
-        <section class="faq">
+        <section class="quick-help">
+            <div class="quick-help-container">
+                <h2 class="section-title">Schnellhilfe</h2>
+                <div class="quick-help-grid">
+                    <a href="#faq" class="quick-help-card">
+                        <div class="quick-help-icon">❓</div>
+                        <h3>FAQ</h3>
+                        <p>Häufig gestellte Fragen</p>
+                    </a>
+                    <a href="#contact" class="quick-help-card">
+                        <div class="quick-help-icon">💬</div>
+                        <h3>Discord</h3>
+                        <p>Community Support</p>
+                    </a>
+                    <a href="#status" class="quick-help-card">
+                        <div class="quick-help-icon">📊</div>
+                        <h3>Status</h3>
+                        <p>Systemstatus prüfen</p>
+                    </a>
+                    <a href="mailto:support@mebump.de" class="quick-help-card">
+                        <div class="quick-help-icon">📧</div>
+                        <h3>E-Mail</h3>
+                        <p>Direkter Kontakt</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
             <div class="faq-container">
-                <h2 class="section-title">Häufige Fragen</h2>
+                <h2 class="section-title">Häufig gestellte Fragen</h2>
                 <div class="faq-list">
                     <div class="faq-item">
-                        <h3>❓ Wie füge ich MeBump zu meinem Server hinzu?</h3>
-                        <p>Klicke auf den "Einladen"-Button in der Navigation und wähle deinen Server aus. Stelle sicher, dass du die nötigen Berechtigungen hast.</p>
+                        <div class="faq-question">
+                            <h3>❓ Wie füge ich MeBump zu meinem Server hinzu?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Klicke auf den "Einladen"-Button in der Navigation und wähle deinen Server aus. Stelle sicher, dass du die Administrator-Berechtigung auf dem Server hast. Nach dem Hinzufügen wird MeBump automatisch konfiguriert.</p>
+                        </div>
                     </div>
+                    
                     <div class="faq-item">
-                        <h3>❓ Wie oft wird mein Server gebumpt?</h3>
-                        <p>Kostenlose Nutzer: Alle 2 Stunden. Premium-Nutzer: Alle 30 Minuten. Lifetime-Nutzer: Alle 15 Minuten.</p>
+                        <div class="faq-question">
+                            <h3>❓ Wie oft wird mein Server gebumpt?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Kostenlose Nutzer:</strong> Alle 2 Stunden<br>
+                            <strong>Premium-Nutzer:</strong> Alle 30 Minuten<br>
+                            <strong>Lifetime-Nutzer:</strong> Alle 15 Minuten</p>
+                            <p style="margin-top: 1rem;">Upgrade auf Premium für häufigere Bumps und mehr Sichtbarkeit!</p>
+                        </div>
                     </div>
+                    
                     <div class="faq-item">
-                        <h3>❓ Funktioniert MeBump auf allen Servern?</h3>
-                        <p>Ja! MeBump funktioniert auf allen Discord-Servern, solange der Bot die nötigen Berechtigungen hat.</p>
+                        <div class="faq-question">
+                            <h3>❓ Funktioniert MeBump auf allen Servern?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ja! MeBump funktioniert auf allen Discord-Servern. Der Bot benötigt folgende Berechtigungen:</p>
+                            <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                                <li>Nachrichten senden</li>
+                                <li>Nachrichten lesen</li>
+                                <li>Einbettungen erstellen</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="faq-item">
-                        <h3>❓ Wie kann ich Premium kaufen?</h3>
-                        <p>Besuche die Premium-Seite und wähle dein gewünschtes Abo. Die Zahlung läuft sicher über Stripe.</p>
+                        <div class="faq-question">
+                            <h3>❓ Wie kann ich Premium kaufen?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Besuche unsere <a href="premium.html" style="color: var(--primary-red);">Premium-Seite</a> und wähle dein gewünschtes Paket. Die Zahlung erfolgt sicher über Stripe. Nach erfolgreicher Zahlung wird dein Account automatisch auf Premium upgradet.</p>
+                        </div>
                     </div>
+                    
                     <div class="faq-item">
-                        <h3>❓ Mein Bot funktioniert nicht - was tun?</h3>
-                        <p>Stelle sicher, dass MeBump die nötigen Berechtigungen hat. Falls das Problem weiterhin besteht, kontaktiere unseren Support.</p>
+                        <div class="faq-question">
+                            <h3>❓ Der Bot antwortet nicht - was tun?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Checkliste:</strong></p>
+                            <ol style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                                <li>Prüfe ob MeBump online ist (siehe Systemstatus unten)</li>
+                                <li>Stelle sicher, dass der Bot die nötigen Berechtigungen hat</li>
+                                <li>Versuche den Bot zu kicken und neu einzuladen</li>
+                                <li>Kontaktiere unseren Support über Discord</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>❓ Kann ich die Bump-Nachrichten anpassen?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ja! Premium und Lifetime Mitglieder können ihre Bump-Nachrichten vollständig anpassen. Du kannst eigene Texte, Farben und sogar Bilder verwenden, um deine Server-Werbung einzigartig zu machen.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact-container">
                 <h2 class="section-title">Kontaktiere uns</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>📧 E-Mail</h3>
-                        <p>support@mebump.de</p>
-                        <h3>💬 Discord</h3>
-                        <p>MeBump#1234</p>
-                        <h3>🕐 Antwortzeit</h3>
-                        <p>Normalerweise innerhalb von 24 Stunden</p>
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <h3>E-Mail Support</h3>
+                            <p>support@mebump.de</p>
+                            <span class="contact-time">⏱️ Antwortzeit: 24-48h</span>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">💬</div>
+                            <h3>Discord Support</h3>
+                            <p>MeBump#1234</p>
+                            <span class="contact-time">⏱️ Antwortzeit: 2-6h</span>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">🎫</div>
+                            <h3>Premium Support</h3>
+                            <p>Priorisierter Support für Premium-Nutzer</p>
+                            <span class="contact-time">⏱️ Antwortzeit: 1-4h</span>
+                        </div>
                     </div>
                     <div class="contact-form">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary-red);">Discord Community</h3>
                         <iframe src="https://discord.com/widget?id=1440633298731798580&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="status">
+        <section id="status" class="status">
             <div class="status-container">
                 <h2 class="section-title">Systemstatus</h2>
-                <div class="status-indicator">
-                    <div class="status-dot online"></div>
-                    <span>Alle Systeme online</span>
+                <div class="status-grid">
+                    <div class="status-service">
+                        <div class="status-header">
+                            <span>MeBump Bot</span>
+                            <div class="status-indicator-inline">
+                                <div class="status-dot online"></div>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                        <div class="status-bar">
+                            <div class="status-bar-fill" style="width: 99.9%"></div>
+                        </div>
+                        <span class="status-uptime">99.9% Uptime</span>
+                    </div>
+
+                    <div class="status-service">
+                        <div class="status-header">
+                            <span>API</span>
+                            <div class="status-indicator-inline">
+                                <div class="status-dot online"></div>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                        <div class="status-bar">
+                            <div class="status-bar-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="status-uptime">100% Uptime</span>
+                    </div>
+
+                    <div class="status-service">
+                        <div class="status-header">
+                            <span>Datenbank</span>
+                            <div class="status-indicator-inline">
+                                <div class="status-dot online"></div>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                        <div class="status-bar">
+                            <div class="status-bar-fill" style="width: 99.5%"></div>
+                        </div>
+                        <span class="status-uptime">99.5% Uptime</span>
+                    </div>
                 </div>
-                <p>Letzter Check: vor 5 Minuten</p>
+                <p style="text-align: center; color: var(--text-gray); margin-top: 2rem;">
+                    Letzter Check: vor 2 Minuten
+                </p>
             </div>
         </section>
     </main>
@@ -114,5 +251,34 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const toggle = item.querySelector('.faq-toggle');
+            
+            answer.style.maxHeight = '0';
+            answer.style.overflow = 'hidden';
+            answer.style.transition = 'max-height 0.3s ease, padding 0.3s ease';
+            answer.style.padding = '0 0';
+            
+            question.addEventListener('click', () => {
+                const isOpen = answer.style.maxHeight !== '0px';
+                
+                if (isOpen) {
+                    answer.style.maxHeight = '0';
+                    answer.style.padding = '0 0';
+                    toggle.textContent = '+';
+                    item.classList.remove('active');
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.padding = '1rem 0 0 0';
+                    toggle.textContent = '−';
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
