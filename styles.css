@@ -101,6 +101,18 @@ body {
     align-items: center;
 }
 
+.nav-link {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+    color: var(--primary-red);
+}
+
 .invite-btn {
     background: linear-gradient(135deg, var(--primary-red), var(--hover-red));
     color: white;
