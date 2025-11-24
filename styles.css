@@ -115,38 +115,18 @@ body {
 
 .invite-btn {
     background: linear-gradient(135deg, var(--primary-red), var(--hover-red));
-    color: white;
+    color: white !important;
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px var(--glow-red);
-    position: relative;
-    overflow: hidden;
-}
-
-.invite-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s ease;
-}
-
-.invite-btn:hover::before {
-    left: 100%;
+    text-decoration: none;
 }
 
 .invite-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 25px var(--hover-red);
-    color: white;
-}
-
-.invite-btn::after {
-    display: none;
+    color: white !important;
 }
 
 .hero {
